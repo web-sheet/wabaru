@@ -1,6 +1,6 @@
 {
     "rewrites": [
-        { "source": "/public/api/(.*)", "destination": "/main.js" },
+        { "source": "/api/qr-code", "destination": "/main.js" },
         { "source": "/(.*)", "destination": "public/index.html" }
     ]
 }
