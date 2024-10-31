@@ -21,7 +21,7 @@ client.on('ready', () => {
     console.log('Client is ready!');
 });
 
-app.get('/api/qr-code', (req, res) => {
+app.get('qrcode', (req, res) => {
     if (app.locals.qrCode) {
         res.json({ qrCode: app.locals.qrCode });
     } else {
