@@ -20,7 +20,7 @@
     <div id="qr-code"></div>
     <script>
         async function fetchQRCode() {
-            const response = await fetch('/api/qr-code');
+            const response = await fetch('/qr-code');
             const data = await response.json();
             document.getElementById('qr-code').innerHTML = `<img src="${data.qrCode}" alt="QR Code" />`;
         }
