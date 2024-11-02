@@ -1,19 +1,13 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "main.js",
-            "use": "@vercel/node"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/api/(.*)",
-            "dest": "main.js"
-        },
-        {
-            "src": "/(.*)",
-            "dest": "/public/$1"
-        }
-    ]
+  "version": 2,
+  "routes": [
+    {
+      "src": "/api/qrcode",
+      "dest": "/main.js"
+    },
+    {
+      "src": "/",
+      "dest": "/public/index.html"
+    }
+  ]
 }
