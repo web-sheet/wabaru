@@ -1,13 +1,14 @@
 {
   "version": 2,
   "routes": [
-    {
-      "src": "/api/qrcode",
-      "dest": "/main.js"
-    },
+
     {
       "src": "/",
       "dest": "/public/index.html"
+    },
+        {
+      "src": "/api/qrcode",
+      "dest": "/main.js"
     }
   ]
 }
