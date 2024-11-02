@@ -1,6 +1,15 @@
 {
-    "rewrites": [
-        { "source": "/api/qr-code", "destination": "/main.js" },
-        { "source": "/(.*)", "destination": "public/index.html" }
+    "version": 2,
+    "builds": [
+        {
+            "src": "index.js",
+            "use": "@now/node"
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "main.js"
+        }
     ]
 }
