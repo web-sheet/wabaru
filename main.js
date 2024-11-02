@@ -5,6 +5,7 @@ import qrcode from 'qrcode';
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+app.use(express.static('public'));
 
 const client = new Client();
 
@@ -33,7 +34,7 @@ app.get('/api/qrcode', (req, res) => {
 // Other event handlers remain unchanged...
 
 client.initialize();
-app.use(express.static('public'));
+
 
 // Vercel will handle the serverless function, so we don't need to listen on a specific port
 export default app;
